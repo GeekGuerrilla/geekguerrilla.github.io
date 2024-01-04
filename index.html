@@ -5,19 +5,210 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GeekGuerrilla</title>
+    <title>Geekguerrilla</title>
     <link rel="stylesheet" href="/static/darkly/css/bootstrap.css">
     <script src="/static/darkly/js/bootstrap.bundle.js"></script>
 </head>
 
 <body>
-<div class="container-fluid" style="margin-top: 3%;">
 
+<div class="container-fluid" style="margin-top: 3%;">
     <div class="card border-success mb-3" style="max-width: 90%; margin-left: 5%;">
-      <div class="card-header"><h2><p class="text-success text-center">Soon</p></h2></div>
-      <div class="card-body">
-        
-      </div>
+        <ul class="nav nav-tabs justify-content-center" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" data-bs-toggle="tab" href="#whoweare" aria-selected="true" role="tab">who we are</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" data-bs-toggle="tab" href="#service" aria-selected="false" role="tab" tabindex="-1">service</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" data-bs-toggle="tab" href="#wos" aria-selected="false" role="tab" tabindex="-2">wall of shame <span class="badge rounded-pill bg-success">new</span></a>
+           </li>
+           <li class="nav-item" role="presentation">
+                <a class="nav-link" data-bs-toggle="tab" href="#contact" aria-selected="false" role="tab" tabindex="-3">contact</a>
+           </li>
+        </ul>
+
+        <div id="GGTabContent" class="tab-content">
+            <div class="tab-pane fade active show" id="whoweare" role="tabpanel">
+                <div class="card-body">
+                    <h4 class="card-title">Who the heck is GeekGuerrilla?</h4>
+                    <p class="card-text">
+                        GeekGuerrilla is an association of <b class="text-success">highly qualified programmers</b> who mostly have a <b class="text-success">master of computer science</b> degree
+                        from a renowned university with partly 30 years of experience. We live our passion - security <b class="text-success">and</b> freedom in the cyberspace. As former blackhats 
+                        we know how attackers are working and thinking. To fight a hacker you will need a hacker. We are focused at vulnerability scans of your systems/servers and provide solutions 
+                        for every weakness we found. For your and our security the heads of work stay anonymous - like your attackers. If you need personal support we will send you an experienced 
+                        technican. Contact is possible via chat (Signal/SimpleX) or via email. Same for our weekly reports to you. All encrypted using PGP. Below some spare infos from our 
+                        <b class="text-success">european</b> division. The new <b class="text-success">wall of shame</b> is reserved for companies which doesnt care about their custumers security and safety.
+
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="static/images/anon.png" class="card-img-top" style="max-width: 50%; margin-left: 25%;" alt="iizegrim">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">iizegrim/germany</h5>
+                                    <p class="card-text text-center">Hacker with almost 30 years experience. Coding god (C, C++, Python). Fingerprint: 8BBA9B987E19F99E588769BB27D34F1DBB4D3E4E</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <small class="text-body-secondary"><a href="static/pgp/pgp_iizegrim.txt" class="btn btn-outline-success text-center" style="margin: 2%;">PGP Key</a></small>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="static/images/anon_alter.png" class="card-img-top" style="max-width: 50%; margin-left: 25%;" alt="gibson">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">gibson/united kingdom</h5>
+                                    <p class="card-text text-center">Envolving from scriptkid to master. Python god. Fingerprint: 48A1967BB5BE8F84E1110125F84F3446435BA8B3</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <small class="text-body-secondary"><a href="static/pgp/pgp_gibson.txt" class="btn btn-outline-success text-center" style="margin: 2%;">PGP Key</a></small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="service" role="tabpanel">
+                <div class="card-body">
+                    <h4 class="card-title">Our service - we scan your systems once in two weeks for:</h4>
+                        <p class="card-text">
+                            <div class="list-group list-group-flush justify-content-center">
+                                <a href="#" class="list-group-item list-group-item-action">crawl for hidden content</a>
+                                <a href="#" class="list-group-item list-group-item-action">check metafiles</a>
+                                <a href="#" class="list-group-item list-group-item-action">check cache of webarchive against current state</a>
+                                <a href="#" class="list-group-item list-group-item-action">check web application/perform fingerprinting</a>
+                                <a href="#" class="list-group-item list-group-item-action">identify used technologies/user roles/application entry points/type of code</a>
+                                <a href="#" class="list-group-item list-group-item-action">identify web service (co-host, all names and ports, third party)</a>
+                                <a href="#" class="list-group-item list-group-item-action">check for old and/or backup files</a>
+                                <a href="#" class="list-group-item list-group-item-action">check HTTP/HTTPS methods supported</a>
+                                <a href="#" class="list-group-item list-group-item-action">check file extensions handling</a>
+                                <a href="#" class="list-group-item list-group-item-action">check SSL version, algorithms, key length</a>
+                                <a href="#" class="list-group-item list-group-item-action">check digital certificates (valid, duration, signature)</a>
+                                <a href="#" class="list-group-item list-group-item-action">check for HTTPS only (session tokens/credentials/login )</a>
+                                <a href="#" class="list-group-item list-group-item-action">check for CORS</a>
+                                <a href="#" class="list-group-item list-group-item-action">test password quality rules</a>
+                                <a href="#" class="list-group-item list-group-item-action">test “remember me” for abuse</a>
+                                <a href="#" class="list-group-item list-group-item-action">test password reset/recovery (and the used process)</a>
+                                <a href="#" class="list-group-item list-group-item-action">test CAPTCHA</a>
+                                <a href="#" class="list-group-item list-group-item-action">test 2FA</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for default logins</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for user enumeration</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for auth bypass</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for brute force protection</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for credentials transport over encrypted channels</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for cache management/accessible authentication history</a>
+                                <a href="#" class="list-group-item list-group-item-action">check for session management (cookies and/or path)</a>
+                                <a href="#" class="list-group-item list-group-item-action">check cookie (flags, scope, duration, randomness)</a>
+                                <a href="#" class="list-group-item list-group-item-action">test session termination (lifetime, timeout, logout)</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for multiple simultaneous sessions for the same user</a>
+                                <a href="#" class="list-group-item list-group-item-action">test/confirm for new session tokens at login, role change and logout only</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for consistent session management across applications</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for NULL or invalid session rules</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for CSFR, clickjacking, puzzling</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for path traversal</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for privilege escalation</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for missing auth/insecure direct object reference</a>
+                                <a href="#" class="list-group-item list-group-item-action">check all data is encrypted</a>
+                                <a href="#" class="list-group-item list-group-item-action">check for weak algorithms, proper salting, random functionality</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for HTML, SQL, XML, CODE injection</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for cross site scripting (reflected/stored/DOM)</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for overflow (stack, integer)</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for format (string)</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for local/remote file inclusion</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for redirection</a>
+                                <a href="#" class="list-group-item list-group-item-action">compare client-side and server-side validation</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for auto binding</a>
+                                <a href="#" class="list-group-item list-group-item-action">test (D)DoS attack</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for (D)DoS anti automation</a>
+                                <a href="#" class="list-group-item list-group-item-action">test/check acceptable file types, size limits, upload restrictions, total counts)</a>
+                                <a href="#" class="list-group-item list-group-item-action">test/check for anti-virus scanning</a>
+                                <a href="#" class="list-group-item list-group-item-action">test/check for sanitized filenames, file accessible from root, duplications handling</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for insecure cryptographic storage</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for (insecure) TLS</a>
+                                <a href="#" class="list-group-item list-group-item-action">test for proper error handling</a>
+                            </div>
+                        </p>
+                </div>
+
+                <div class="card-body">
+                    <p class="card-text">
+                        Please note: not all mentioned scans fits for all customers. This is <b class="text-success">not a pentest</b> (Penetration Test). Depending on requirements,
+                        a pentest takes 1 to 6 days and needs a technican at <b class="text-success">your location</b>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="wos" role="tabpanel">
+                <div class="card-body">
+                    <h4 class="card-title">Wall of shame:</h4>
+                    <p class="card-text">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Company</th>
+                                    <th scope="col">URL</th>
+                                    <th scope="col">Weakness</th>
+                                    <th scope="col">Update</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-secondary">
+                                    <th scope="row">Example Ltd.</th>
+                                    <td><a href="https://example.com" target="_blank">https://example.com</a></td>
+                                    <td><b class="text-danger">file inclusion, sql injection</b></td>
+                                    <td>28/11/2023</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                </div>
+          </div>
+
+          <div class="tab-pane fade" id="contact" role="tabpanel">
+              <div class="card-body">
+                <h4 class="card-title">Contact</h4>
+                <p class="card-text">
+                    If you are interested send a mail at <b class="text-success">iizegrim@tutanota.com</b>. If you want to reach out a special member - note it. Our rates are:
+
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th scope="col">Service</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Payment</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-secondary">
+                                <th scope="row">Vulnerability Scan</th>
+                                <td>EUR 8.400/annual</td>
+                                <td>monthly</td>
+                           </tr>
+                           <tr class="table-secondary">
+                                <th scope="row">Vulnerability Scan</th>
+                                <td>EUR 6.600/annual</td>
+                                <td>once a year</td>
+                           </tr>
+                           <tr class="table-secondary">
+                                <th scope="row">Pentest</th>
+                                <td>starts at EUR 8.900</td>
+                                <td>in advance</td>
+                           </tr>
+                           <tr class="table-secondary">
+                                <th scope="row">Technican at your location</th>
+                                <td>EUR 1.600 per day</td>
+                                <td>weekly in advance</td>
+                           </tr>
+                        </tbody>
+                    </table>
+                </p>
+
+                <p class="card-text text-center"><img src="static/images/btc_accepted_here.png" class="img-fluid" style="max-width: 20%; max-height: 20%;" alt="we accept bitcoin"></p>
+
+              </div>
+          </div>
+        </div>
     </div>
 </div>
 </body>
